@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-11T13:52:03+00:00",
+  "items": [
+    {
+      "id": "26242",
+      "category": "Finanza",
+      "title": "Teoria dei giochi",
+      "hook_title": "La teoria dei giochi è una disciplina che studia modelli matematici di interazione strategica tra agenti razionali.",
+      "micro_body": "La teoria dei giochi ha applicazioni in vari campi delle scienze sociali, così come nella logica, nella teoria dei sistemi e nell'informatica.",
+      "deep_dive_expandable": "Sebbene originariamente si sia focalizzata sui giochi a somma zero, in cui i guadagni o le perdite di ogni partecipante sono perfettamente bilanciati da quelli degli altri, la teoria dei giochi contemporanea si applica ad una vasta gamma di relazioni comportamentali e indica ormai genericamente la scienza delle decisioni logiche negli esseri umani, negli animali e nei calcolatori. La teoria dei giochi moderna nasce con l'idea di equilibri in strategie miste per giochi a somma zero a due giocatori e con la corrispondente dimostrazione di esistenza proposta da John von Neumann. La dimostrazione originale di von Neumann utilizza il teorema del punto fisso di Brouwer per le mappe continue su insiemi convessi compatti; questo metodo di dimostrazione è diventato standard nella teoria dei giochi e in economia matematica. L'articolo di von Neumann fu seguito dal suo libro del 1944, Theory of Games and Economic Behavior, scritto in collaborazione con Oskar Morgenstern, in cui vengono considerati anche giochi cooperativi a più giocatori. La seconda edizione di questo libro ha fornito una teoria assiomatica dell'utilità attesa, che ha permesso a studiosi di statistica ed economia di modellare ed analizzare i comportamenti decisionali in situazioni di incertezza. La teoria dei giochi è stata sviluppata negli anni cinquanta da molti studiosi. È stata esplicitamente applicata all'evoluzione naturale negli anni settanta, sebbene sviluppi simili risalgano già almeno agli anni trenta. La teoria dei giochi è stata riconosciuta come uno strumento importante in molti campi. Alla data del 2014, anno in cui il premio Nobel per l'economia è stato assegnato al teorico dei giochi Jean Tirole, undici teorici dei giochi hanno vinto un premio Nobel per l'economia. John Maynard Smith è stato insignito del Premio Crafoord per la sua applicazione della teoria dei giochi all'evoluzione naturale.",
+      "source_url": "https://it.wikipedia.org/wiki/Teoria_dei_giochi",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:49:04+00:00"
+    },
+    {
+      "id": "2041600",
+      "category": "Finanza",
+      "title": "Battaglia dei sessi",
+      "hook_title": "La battaglia dei sessi è un gioco di coordinamento a due giocatori utilizzato in teoria dei giochi.",
+      "micro_body": "Immaginate una coppia: il marito sarebbe massimamente felice se potesse andare a una partita di football. La moglie vorrebbe invece andare all'opera. Inoltre entrambi preferirebbero andare nello stesso luogo piuttosto che in posti diversi. Se essi non possono comunicare, in quale luogo dovrebbero andare?",
+      "deep_dive_expandable": "La matrice dei payoff, indicata in figura come \"battaglia dei sessi (1)\", è un esempio di battaglia dei sessi, dove la moglie sceglie la riga ed il marito la colonna. Questa rappresentazione non tiene conto di ulteriori svantaggi che potrebbero provenire dall'andare non solo in luoghi diversi, ma anche \"sbagliati\" (cioè lui va all'opera, mentre preferisce il football; viceversa per lei). Al fine di rendere conto anche di questo fatto, il gioco è talvolta rappresentato come nella \"Battaglia dei sessi (2)\". Questa seconda rappresentazione ha alcune somiglianze col Gioco del pollo. Questo gioco ha due equilibri di Nash in strategie pure: uno in cui entrambi vanno all'opera (3,2) e un altro in cui entrambi vanno al football (2,3). Nella \"battaglia dei sessi (1)\", vi è anche un equilibrio di Nash in strategie miste, dove i giocatori scelgono con probabilità maggiore l'evento preferito rispetto all'altro: utilizzando i payoff di cui sopra, ogni giocatore sceglie la riga o colonna preferita con probabilità 3/5. Questo equilibrio è però inefficiente. Anche nella \"battaglia dei sessi (2)\", c'è un equilibrio di Nash in strategie miste, dove i giocatori scelgono con probabilità maggiore l'evento preferito rispetto all'altro: utilizzando i payoff di cui sopra, ogni giocatore sceglie la riga o colonna preferita con probabilità 3/4.",
+      "source_url": "https://it.wikipedia.org/wiki/Battaglia_dei_sessi",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:49:05+00:00"
+    },
+    {
+      "id": "3656151",
+      "category": "Finanza",
+      "title": "Beauty contest",
+      "hook_title": "Il beauty contest è un concetto sviluppato da John Maynard Keynes e introdotto nel capitolo 12 della sua Teoria generale dell'occupazione, dell'interesse e della moneta (1936), per spiegare le fluttuazioni dei prezzi nella borsa valori.",
+      "micro_body": "Con il termine beauty contest si indica anche una procedura attraverso la quale si giunge all'allocazione, in modo efficiente, di risorse a coloro che le possono utilizzare, attribuendo alle risorse stesse il maggior valore dal punto di vista economico e finanziario.",
+      "deep_dive_expandable": "Per permettere ciò, è preposta un'apposita commissione, incaricata di verificare la validità dei soggetti che partecipano all'operazione di allocazione delle risorse, al fine di individuare il soggetto che meglio risponde alle caratteristiche desiderate dal promotore dell'operazione.",
+      "source_url": "https://it.wikipedia.org/wiki/Beauty_contest",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:50:01+00:00"
+    },
+    {
+      "id": "1233244",
+      "category": "Storia",
+      "title": "Storia economica",
+      "hook_title": "La storia economica studia e analizza i fenomeni economici passati e presenti, inserendoli nel loro contesto sociale, politico e culturale.",
+      "micro_body": "Tra i temi più indagati vi sono: origini e cause dello sviluppo economico, con particolare attenzione alla rivoluzione industriale e alla nascita del sistema capitalistico; l'andamento dei redditi, le condizioni di vita e le disuguaglianze; lo sviluppo regionale, l'integrazione dei mercati e la globalizzazione; le interazioni tra fattori culturali, politici, tecnici ed economici; la moneta, il credito e i mercati finanziari.",
+      "deep_dive_expandable": "Tra i temi più indagati vi sono: origini e cause dello sviluppo economico, con particolare attenzione alla rivoluzione industriale e alla nascita del sistema capitalistico; l'andamento dei redditi, le condizioni di vita e le disuguaglianze; lo sviluppo regionale, l'integrazione dei mercati e la globalizzazione; le interazioni tra fattori culturali, politici, tecnici ed economici; la moneta, il credito e i mercati finanziari.",
+      "source_url": "https://it.wikipedia.org/wiki/Storia_economica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Bundesarchiv_Bild_183-62752-0001%2C_Plaste.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:50:02+00:00"
+    },
+    {
+      "id": "7640021",
+      "category": "Storia",
+      "title": "Accordi della Giamaica",
+      "hook_title": "Gli accordi della Giamaica sono il seguito della riunione di Kingston (Giamaica), avvenuta il 7 e l’8 gennaio 1976, del Comitato interinale del Fondo Monetario Internazionale (FMI), il quale mette fine definitivamente al sistema monetario delle parità fisse ma aggiustabili.",
+      "micro_body": "Questi accordi sono la conferma ufficiale dell’abbandono del ruolo legale internazionale dell’oro.",
+      "deep_dive_expandable": "Questi accordi sono la conferma ufficiale dell’abbandono del ruolo legale internazionale dell’oro.",
+      "source_url": "https://it.wikipedia.org/wiki/Accordi_della_Giamaica",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:50:03+00:00"
+    },
+    {
+      "id": "5759096",
+      "category": "Storia",
+      "title": "Alleanza per il Progresso",
+      "hook_title": "L'Alleanza per il Progresso (in lingua inglese Alliance for Progress; in lingua spagnola Alianza para el Progreso) è stato un programma voluto dal Presidente degli Stati Uniti d'America John F.",
+      "micro_body": "Kennedy nel 1961, con lo scopo di stabilire la collaborazione economica tra gli Stati Uniti d'America e l'America Latina.",
+      "deep_dive_expandable": "Il Governatore di Porto Rico, Luis Muñoz Marín, fu un consulente sui problemi dell'America Latina molto vicino a Kennedy, e uno dei principali amministratori dell'isola, l'architetto dell'Operazione Bootstrap, Teodoro Moscoso, fu nominato coordinatore del programma dallo stesso Kennedy.",
+      "source_url": "https://it.wikipedia.org/wiki/Alleanza_per_il_Progresso",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Betancourt_-_JFK.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:50:03+00:00"
+    },
+    {
+      "id": "1480255",
+      "category": "Scienza",
+      "title": "Paradosso",
+      "hook_title": "Un paradosso, dal greco antico παρά?, pará (\"contro\") e δόξα, dóxa (\"opinione\"), è, genericamente, la descrizione di un fatto che contraddice l'opinione comune o l'esperienza quotidiana, riuscendo perciò sorprendente, straordinaria o bizzarra; più precisamente, in senso logico-linguistico, indica sia un ragionamento che appare invalido, ma che deve essere accettato, sia un ragionamento che appare corretto, ma che porta a una contraddizione.",
+      "micro_body": "Secondo la definizione che ne dà Mark Sainsbury, si tratta di \"una conclusione apparentemente inaccettabile, che deriva da premesse apparentemente accettabili per mezzo di un ragionamento apparentemente accettabile\". In filosofia ed economia il termine paradosso è usato spesso anche come sinonimo di antinomia.",
+      "deep_dive_expandable": "In matematica invece si distinguono i due termini: il paradosso consiste in una proposizione eventualmente dimostrata e logicamente coerente, ma lontana dall'intuizione; l'antinomia, invece, consiste in una vera e propria contraddizione logica. Il paradosso è un potente stimolo per la riflessione. Rivela sia la debolezza della nostra capacità di discernimento sia i limiti di alcuni strumenti intellettuali per il ragionamento. È stato così che paradossi basati su concetti semplici hanno spesso portato a grandi progressi intellettuali. Talvolta si è trattato di scoprire nuove regole matematiche o nuove leggi fisiche per rendere accettabili le conclusioni che all'inizio erano \"apparentemente inaccettabili\". Altre volte si sono individuati i sottili motivi per cui erano fallaci le premesse o i ragionamenti \"apparentemente accettabili\". Sin dall'inizio della storia scritta si hanno riferimenti ai paradossi: dai paradossi di Zenone alle antinomie di Immanuel Kant, fino a giungere ai paradossi della meccanica quantistica e della teoria della relatività generale, l'umanità si è sempre interessata ai paradossi. Il buddhismo zen (specie quello di scuola Rinzai) affida l'insegnamento della sua dottrina ai kōan, indovinelli paradossali.",
+      "source_url": "https://it.wikipedia.org/wiki/Paradosso",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:51:01+00:00"
+    },
+    {
+      "id": "483012",
+      "category": "Scienza",
+      "title": "Paradosso di Abilene",
+      "hook_title": "Il paradosso di Abilene (pron. /ˈæbəliːn/) è un paradosso in cui un gruppo di persone prende una decisione che va contro gli interessi di tutti gli individui del gruppo.",
+      "micro_body": "È causato da un problema di comunicazione interno al gruppo, per cui ciascun membro crede erroneamente che la propria preferenza sia contraria a quella del gruppo e non prova nemmeno a sollevare obiezioni. Il paradosso è descritto con una storia spesso presentata ai corsi di management.",
+      "deep_dive_expandable": "È causato da un problema di comunicazione interno al gruppo, per cui ciascun membro crede erroneamente che la propria preferenza sia contraria a quella del gruppo e non prova nemmeno a sollevare obiezioni. Il paradosso è descritto con una storia spesso presentata ai corsi di management.",
+      "source_url": "https://it.wikipedia.org/wiki/Paradosso_di_Abilene",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:51:02+00:00"
+    },
+    {
+      "id": "4366457",
+      "category": "Scienza",
+      "title": "Aibofobia",
+      "hook_title": "L'aibofobia è una fobia ipotetica nei confronti dei palindromi.",
+      "micro_body": "Essendo il termine stesso palindromo, genera un paradosso comico secondo cui il nome della fobia sarebbe in grado di incutere paura in una persona che ne soffre. La parola consiste in un gioco linguistico appartenente al patrimonio lessicale e umoristico diffuso su internet.",
+      "deep_dive_expandable": "Infatti il prefisso \"aibo\" non riveste alcun ruolo semantico, ma serve unicamente come artificio per rendere palindroma la parola composta.",
+      "source_url": "https://it.wikipedia.org/wiki/Aibofobia",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:51:03+00:00"
+    },
+    {
+      "id": "426020",
+      "category": "Finanza",
+      "title": "Chomp",
+      "hook_title": "Il Chomp è un gioco astratto, uno dei giochi di riferimento più citati nella letteratura sulla teoria dei giochi combinatori, insieme ad Hackenbush e Nim.",
+      "micro_body": "Da un punto di vista matematico, viene classificato come gioco \"poset\" (poset sta per partially ordered set, \"insieme parzialmente ordinato\").",
+      "deep_dive_expandable": "La sua ideazione viene attribuita generalmente a David Gale (professore di computer science all'Università della California e autore anche del Bridg-It), ma può essere interpretato come una variante del gioco dei divisori proposto da Fred Schuh nel 1952. Fu Martin Gardner a dare al gioco il nome \"Chomp\", con cui esso è oggi noto. Del Chomp sono state proposte in letteratura molte varianti. Fra queste si può citare il mancala di Eppstein (inventato da David Eppstein, collega di Gale all'Università della California), che presenta diverse affinità con i giochi tradizionali della famiglia dei mancala.",
+      "source_url": "https://it.wikipedia.org/wiki/Chomp",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:52:01+00:00"
+    },
+    {
+      "id": "2053106",
+      "category": "Finanza",
+      "title": "Collusione tacita",
+      "hook_title": "La collusione tacita è spiegata in teoria dei giochi come un accordo tra imprese oligopolistiche che si ottiene giocando ripetutamente lo stesso gioco.",
+      "micro_body": "Rifacendoci al duopolio di Cournot possiamo vedere come due imprese che non vogliono cooperare giocheranno l'equilibrio di Nash e produrranno entrambe la stessa quantità ottimale (13).",
+      "deep_dive_expandable": "Giocando ripetutamente queste partita secondo una strategia tit for tat scopriamo che esse possono arrivare ad una collusione, senza mai parlarsi, ma solamente osservando le mosse strategiche degli altri giocatori.",
+      "source_url": "https://it.wikipedia.org/wiki/Collusione_tacita",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:52:01+00:00"
+    },
+    {
+      "id": "53062",
+      "category": "Storia",
+      "title": "Bolla dei tulipani",
+      "hook_title": "La bolla dei tulipani è stata una bolla speculativa sui prezzi dei bulbi dei fiori scoppiata nell'economia olandese del Seicento.",
+      "micro_body": "È stata un'eccessiva corsa dei prezzi, che è divenuta la prima ad essere documentata nella storia del capitalismo.",
+      "deep_dive_expandable": "Nella prima metà del XVII secolo, nei Paesi Bassi la domanda di bulbi di tulipano fu così eccessiva che ogni singolo bulbo di tulipano raggiunse prezzi enormi (sopra a 200 fiorini olandesi); questo straordinario livello dei prezzi calò comunque drasticamente in breve tempo. A partire dal 1636, il bulbo di tulipano diventò il quarto principale prodotto di esportazione dei Paesi Bassi dopo gin, aringhe e formaggio. Il prezzo dei tulipani salì alle stelle a causa della speculazione sui futuri tulipani fra coloro che non avevano mai visto i bulbi. Molte persone ottennero e persero la loro fortuna da un giorno all'altro.",
+      "source_url": "https://it.wikipedia.org/wiki/Bolla_dei_tulipani",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Semper_Augustus_Tulip_17th_century.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "lang": "it",
+      "fetched_at": "2026-11-11T13:52:03+00:00"
+    }
+  ]
+}

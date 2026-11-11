@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0d17">
+<title>Curiosity</title>
+<style>
+:root{
+  --bg:#0b0d17; --text:#eef0f8; --muted:#a3a8c3;
+  --glass:rgba(255,255,255,.07); --glass-b:rgba(255,255,255,.14);
+  --finanza:#34d399; --storia:#fbbf24; --scienza:#60a5fa; --accent:#a78bfa;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;
+  background:radial-gradient(60% 40% at 15% 10%,#3b2a7a66,transparent),
+             radial-gradient(50% 40% at 90% 85%,#0e7a7a55,transparent),var(--bg)}
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(env(safe-area-inset-top) + 10px) 14px 10px;
+  display:flex;gap:8px;align-items:center;background:linear-gradient(var(--bg),transparent)}
+.chips{display:flex;gap:6px;overflow-x:auto;flex:1;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.glass{background:var(--glass);border:1px solid var(--glass-b);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+button,a.btn{font:inherit;color:var(--text);cursor:pointer;border-radius:999px;padding:8px 14px;
+  font-size:.85rem;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+button:focus-visible,a.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#14102a;font-weight:600}
+#feed{height:100dvh;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none}
+#feed::-webkit-scrollbar{display:none}
+.card{height:100dvh;scroll-snap-align:start;scroll-snap-stop:always;display:flex;align-items:flex-end;
+  padding:84px 14px calc(env(safe-area-inset-bottom) + 18px);position:relative;overflow:hidden}
+.card .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.28;filter:saturate(1.1)}
+.card .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 20%,var(--bg) 92%)}
+.panel{position:relative;width:100%;max-width:640px;margin:0 auto;border-radius:24px;padding:20px}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px;border:1px solid currentColor}
+.Finanza .tag{color:var(--finanza)}.Storia .tag{color:var(--storia)}.Scienza .tag{color:var(--scienza)}
+h2{font-size:clamp(1.25rem,5.2vw,1.7rem);line-height:1.25;margin-bottom:10px}
+.body{color:var(--muted);line-height:1.55;font-size:.97rem;margin-bottom:16px;
+  display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.primary{background:var(--accent);border-color:var(--accent);color:#14102a;font-weight:600}
+.fav[aria-pressed="true"]{color:#fb7185;border-color:#fb7185}
+.empty{height:100dvh;display:grid;place-items:center;color:var(--muted);text-align:center;padding:20px}
+#overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.25s;z-index:30}
+#overlay.open{opacity:1;pointer-events:auto}
+#drawer{position:fixed;left:0;right:0;bottom:0;z-index:40;max-height:82dvh;overflow:auto;
+  border-radius:26px 26px 0 0;padding:22px 18px calc(env(safe-area-inset-bottom) + 22px);
+  transform:translateY(105%);transition:transform .3s ease;background:rgba(18,20,36,.88)}
+#drawer.open{transform:none}
+#drawer .inner{max-width:640px;margin:0 auto}
+#drawer h3{font-size:1.2rem;margin-bottom:12px}
+#drawer p{color:#d3d6ea;line-height:1.65;margin-bottom:12px;font-size:.98rem}
+#drawer .actions{margin-top:16px;position:sticky;bottom:0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="chips" id="chips" role="group" aria-label="Filtro categoria"></div>
+  <button class="glass" id="favOnly" aria-pressed="false" title="Solo preferiti">♥</button>
+  <button class="glass" id="shuffle">🔀 Shuffle</button>
+</header>
+<main id="feed" tabindex="-1"></main>
+<div id="overlay"></div>
+<aside id="drawer" class="glass" role="dialog" aria-modal="true" aria-labelledby="dTitle" aria-hidden="true">
+  <div class="inner">
+    <h3 id="dTitle"></h3><div id="dBody"></div>
+    <div class="actions">
+      <a class="btn primary" id="dSrc" target="_blank" rel="noopener noreferrer">Fonte Ufficiale ↗</a>
+      <button class="glass" id="dClose">Chiudi</button>
+    </div>
+  </div>
+</aside>
+
+<script>
+const W = "https://it.wikipedia.org/wiki/";
+const FALLBACK = [
+ {id:"fb-lehman",category:"Finanza",title:"Lehman Brothers",hook_title:"Il 15 settembre 2008 Lehman Brothers dichiarò bancarotta.",
+  micro_body:"Fu il più grande fallimento della storia degli Stati Uniti, con oltre 600 miliardi di dollari di attività. Innescò il panico globale della crisi finanziaria.",
+  deep_dive_expandable:"Lehman era la quarta banca d'investimento americana. L'esposizione ai mutui subprime e la fuga dei finanziatori ne causarono il collasso, senza salvataggio pubblico. Il fallimento congelò i mercati interbancari e spinse governi e banche centrali a interventi senza precedenti.",
+  source_url:W+"Lehman_Brothers"},
+ {id:"fb-1929",category:"Finanza",title:"Crisi del 1929",hook_title:"Il 24 ottobre 1929, il «giovedì nero», Wall Street crollò.",
+  micro_body:"Il crollo della borsa di New York aprì la Grande depressione, la più grave crisi economica del XX secolo.",
+  deep_dive_expandable:"Dopo anni di speculazione a leva, i prezzi azionari crollarono in pochi giorni. Il credito si contrasse, centinaia di banche fallirono e la disoccupazione negli USA superò il 20%. La crisi si propagò al resto del mondo tramite il sistema aureo e il commercio.",
+  source_url:W+"Crisi_del_1929"},
+ {id:"fb-prigioniero",category:"Finanza",title:"Dilemma del prigioniero",hook_title:"Due individui razionali possono scegliere di non cooperare anche se cooperare converrebbe a entrambi.",
+  micro_body:"È l'esempio più famoso di teoria dei giochi: l'equilibrio di Nash porta a un esito peggiore di quello cooperativo.",
+  deep_dive_expandable:"Formalizzato da Merrill Flood e Melvin Dresher nel 1950 e battezzato da Albert Tucker, il gioco spiega fenomeni come le corse agli armamenti, la competizione sui prezzi e la gestione dei beni comuni. Nelle versioni ripetute, strategie come il «tit for tat» favoriscono la cooperazione.",
+  source_url:W+"Dilemma_del_prigioniero"},
+ {id:"fb-tordesillas",category:"Storia",title:"Trattato di Tordesillas",hook_title:"Nel 1494 Spagna e Portogallo si divisero il mondo con una linea tracciata sull'Atlantico.",
+  micro_body:"Il trattato, mediato dal papa, assegnava alla Spagna le terre a ovest e al Portogallo quelle a est di un meridiano.",
+  deep_dive_expandable:"La linea fu fissata a 370 leghe a ovest di Capo Verde. Fu la ragione per cui il Brasile divenne portoghese mentre il resto dell'America latina fu spagnolo. Altre potenze europee non riconobbero mai quella spartizione.",
+  source_url:W+"Trattato_di_Tordesillas"},
+ {id:"fb-voc",category:"Storia",title:"Compagnia olandese delle Indie orientali",hook_title:"La VOC, fondata nel 1602, fu la prima società per azioni quotata in borsa.",
+  micro_body:"Gli investitori potevano comprare e rivendere quote: nacque così uno dei primi mercati azionari moderni, ad Amsterdam.",
+  deep_dive_expandable:"La Compagnia ottenne il monopolio del commercio con l'Asia, poteva battere moneta, stipulare trattati e fare la guerra. Fu per un periodo la più grande impresa al mondo. Fallì nel 1799 tra corruzione e debiti.",
+  source_url:W+"Compagnia_olandese_delle_Indie_orientali"},
+ {id:"fb-rosetta",category:"Storia",title:"Stele di Rosetta",hook_title:"Una stele trovata nel 1799 permise di decifrare i geroglifici egizi.",
+  micro_body:"Riporta lo stesso decreto in geroglifico, demotico e greco antico. Il greco fu la chiave per leggere gli altri testi.",
+  deep_dive_expandable:"Scoperta da soldati di Napoleone a Rashid (Rosetta), passò agli inglesi ed è oggi al British Museum. Jean-François Champollion la usò nel 1822 per dimostrare che i geroglifici avevano valore sia fonetico sia ideografico.",
+  source_url:W+"Stele_di_Rosetta"},
+ {id:"fb-gutenberg",category:"Storia",title:"Johannes Gutenberg",hook_title:"Intorno al 1455 Gutenberg stampò la Bibbia con i caratteri mobili.",
+  micro_body:"La stampa a caratteri mobili abbassò il costo dei libri e accelerò la diffusione delle idee in Europa.",
+  deep_dive_expandable:"Orafo di Magonza, Gutenberg combinò una lega di piombo per i caratteri, un torchio derivato da quello vinicolo e un inchiostro oleoso. In pochi decenni si stamparono milioni di volumi, alimentando Rinascimento, Riforma e rivoluzione scientifica.",
+  source_url:W+"Johannes_Gutenberg"},
+ {id:"fb-fermi",category:"Scienza",title:"Paradosso di Fermi",hook_title:"Se l'universo è così grande e antico, dove sono tutti gli extraterrestri?",
+  micro_body:"Enrico Fermi pose la domanda nel 1950: la probabilità di vita intelligente sembra alta, ma non ne abbiamo alcuna prova.",
+  deep_dive_expandable:"Le soluzioni proposte vanno dalla rarità della vita complessa al «grande filtro», fino all'ipotesi che le civiltà si autodistruggano o non vogliano comunicare. L'equazione di Drake stima il numero di civiltà comunicanti nella Galassia.",
+  source_url:W+"Paradosso_di_Fermi"},
+ {id:"fb-schrodinger",category:"Scienza",title:"Gatto di Schrödinger",hook_title:"Un gatto è insieme vivo e morto finché qualcuno non apre la scatola.",
+  micro_body:"Schrödinger lo ideò nel 1935 per mostrare quanto fosse assurda l'interpretazione di Copenaghen applicata al mondo macroscopico.",
+  deep_dive_expandable:"Nell'esperimento mentale un atomo radioattivo può far scattare un veleno. Per la meccanica quantistica l'atomo è in sovrapposizione di stati, quindi anche il gatto. Il problema ha stimolato la ricerca sulla decoerenza e sulle interpretazioni alternative.",
+  source_url:W+"Gatto_di_Schr%C3%B6dinger"},
+ {id:"fb-monty",category:"Scienza",title:"Problema di Monty Hall",hook_title:"Cambiare porta raddoppia le probabilità di vincere l'auto: da 1/3 a 2/3.",
+  micro_body:"Dopo che il conduttore apre una porta con una capra, conviene sempre cambiare scelta, anche se sembra controintuitivo.",
+  deep_dive_expandable:"La scelta iniziale ha 1/3 di probabilità di essere corretta; le due porte restanti hanno insieme 2/3, e il conduttore, che sa dove sta l'auto, concentra tutta quella probabilità sulla porta non aperta. Il problema divenne celebre nel 1990 su Parade.",
+  source_url:W+"Problema_di_Monty_Hall"},
+ {id:"fb-gemelli",category:"Scienza",title:"Paradosso dei gemelli",hook_title:"Un gemello che viaggia a velocità relativistiche torna più giovane del fratello rimasto a Terra.",
+  micro_body:"Non è un vero paradosso: deriva dalla dilatazione del tempo prevista dalla relatività ristretta.",
+  deep_dive_expandable:"L'asimmetria nasce dal fatto che il gemello viaggiatore accelera e inverte la rotta, quindi non resta in un unico sistema inerziale. Effetti analoghi sono misurati con orologi atomici su aerei e satelliti.",
+  source_url:W+"Paradosso_dei_gemelli"}
+].map(i=>({lang:"it",image_url:null,...i}));
+
+const $ = s => document.querySelector(s);
+const feed=$("#feed"), chipsEl=$("#chips");
+const store = {
+  get(){try{return new Set(JSON.parse(localStorage.getItem("curiosity.favs")||"[]"))}catch{return new Set()}},
+  set(s){try{localStorage.setItem("curiosity.favs",JSON.stringify([...s]))}catch{}}
+};
+let favs = store.get(), items=[], cat="Tutte", favOnly=false, order=[];
+
+const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => { try{const x=new URL(u); return /^https?:$/.test(x.protocol)?x.href:"#"}catch{return "#"} };
+
+async function load(){
+  try{
+    const r = await fetch("curiosities_db.json",{cache:"no-cache"});
+    if(!r.ok) throw 0;
+    const db = await r.json();
+    if(Array.isArray(db.items) && db.items.length) return db.items;
+  }catch{}
+  return FALLBACK;
+}
+
+function renderChips(){
+  const cats=["Tutte",...new Set(items.map(i=>i.category))];
+  chipsEl.innerHTML=cats.map(c=>`<button class="chip glass" aria-pressed="${c===cat}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+}
+
+function render(){
+  const list = items.filter(i=>(cat==="Tutte"||i.category===cat)&&(!favOnly||favs.has(String(i.id))));
+  list.sort((a,b)=>order.indexOf(String(a.id))-order.indexOf(String(b.id)));
+  if(!list.length){feed.innerHTML=`<div class="empty">Nessuna curiosità qui.<br>Cambia filtro.</div>`;return}
+  feed.innerHTML=list.map(i=>`
+   <section class="card ${esc(i.category)}" data-id="${esc(i.id)}">
+     ${i.image_url?`<div class="bg" style="background-image:url('${esc(safeUrl(i.image_url))}')"></div>`:""}
+     <article class="panel glass">
+       <span class="tag">${esc(i.category)}</span>
+       <h2>${esc(i.hook_title)}</h2>
+       <p class="body">${esc(i.micro_body)}</p>
+       <div class="actions">
+         <button class="primary" data-act="more">Approfondisci</button>
+         <button class="glass fav" data-act="fav" aria-pressed="${favs.has(String(i.id))}" aria-label="Preferito">♥</button>
+       </div>
+     </article>
+   </section>`).join("");
+  feed.scrollTop=0;
+}
+
+function shuffle(){
+  order=items.map(i=>String(i.id));
+  for(let k=order.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[order[k],order[j]]=[order[j],order[k]]}
+  render();
+}
+
+function openDrawer(it){
+  $("#dTitle").textContent=it.title;
+  const paras=String(it.deep_dive_expandable||it.micro_body).split(/\n{1,}/).filter(Boolean);
+  $("#dBody").innerHTML=paras.map(p=>`<p>${esc(p)}</p>`).join("");
+  $("#dSrc").href=safeUrl(it.source_url);
+  $("#drawer").classList.add("open");$("#overlay").classList.add("open");
+  $("#drawer").setAttribute("aria-hidden","false");$("#dClose").focus();
+}
+function closeDrawer(){
+  $("#drawer").classList.remove("open");$("#overlay").classList.remove("open");
+  $("#drawer").setAttribute("aria-hidden","true");
+}
+
+chipsEl.addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(!b)return;cat=b.dataset.c;renderChips();render()});
+$("#shuffle").onclick=shuffle;
+$("#favOnly").onclick=e=>{favOnly=!favOnly;e.currentTarget.setAttribute("aria-pressed",favOnly);render()};
+feed.addEventListener("click",e=>{
+  const b=e.target.closest("[data-act]");if(!b)return;
+  const id=b.closest(".card").dataset.id;
+  if(b.dataset.act==="more") openDrawer(items.find(i=>String(i.id)===id));
+  else{favs.has(id)?favs.delete(id):favs.add(id);store.set(favs);b.setAttribute("aria-pressed",favs.has(id));if(favOnly)render()}
+});
+$("#overlay").onclick=closeDrawer;$("#dClose").onclick=closeDrawer;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer()});
+
+load().then(list=>{items=list;order=items.map(i=>String(i.id));renderChips();render()});
+</script>
+</body>
+</html>
