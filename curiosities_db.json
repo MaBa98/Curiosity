@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-19T14:27:59+00:00",
+  "updated_at": "2026-11-20T14:01:14+00:00",
   "items": [
     {
       "id": "26242",
@@ -2065,6 +2065,150 @@
       "image_url": null,
       "lang": "it",
       "fetched_at": "2026-11-19T14:27:59+00:00"
+    },
+    {
+      "id": "11117536",
+      "category": "Scienza",
+      "title": "Quadrato alfamagico",
+      "hook_title": "Un quadrato alfamagico è un quadrato magico che rimane magico quando i suoi numeri vengono sostituiti dal numero di lettere che compongono il nome di ciascun numero.",
+      "micro_body": "Quindi 4 verrebbe sostituito da 7, il numero di lettere in \"quattro\". Poiché lingue diverse avranno un numero diverso di lettere per scrivere lo stesso numero, i quadrati alfamagici sono dipendenti dalla lingua. Il termine alfamagico è stato coniato da Lee Sallows nel 1986.",
+      "deep_dive_expandable": "Quindi 4 verrebbe sostituito da 7, il numero di lettere in \"quattro\". Poiché lingue diverse avranno un numero diverso di lettere per scrivere lo stesso numero, i quadrati alfamagici sono dipendenti dalla lingua. Il termine alfamagico è stato coniato da Lee Sallows nel 1986.",
+      "source_url": "https://it.wikipedia.org/wiki/Quadrato_alfamagico",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:00:50+00:00"
+    },
+    {
+      "id": "11026598",
+      "category": "Storia",
+      "title": "Convenzione internazionale per la protezione di tutti gli individui dalle sparizioni forzate",
+      "hook_title": "La Convenzione internazionale per la protezione di tutte le persone dalle sparizioni forzate (in inglese International Convention for the Protection of All Persons from Enforced Disappearance, abbreviata ICPPED) è un trattato internazionale delle Nazioni Unite adottato dall'Assemblea generale il 20 dicembre 2006 con la risoluzione 61/177.",
+      "micro_body": "La Convenzione mira a prevenire e reprimere il fenomeno della sparizione forzata, qualificata dal diritto internazionale come una grave violazione dei diritti umani e, quando praticata in modo sistematico o generalizzato, come crimine contro l'umanità.",
+      "deep_dive_expandable": "Il testo è stato aperto alla firma a Parigi il 6 febbraio 2007 ed è entrato in vigore il 23 dicembre 2010, dopo il raggiungimento del numero minimo di ratifiche previsto. La Convenzione si applica esclusivamente alle cosiddette “sparizioni forzate”, ossia ai casi in cui la privazione della libertà sia attribuibile direttamente o indirettamente allo Stato, attraverso i suoi agenti o mediante autorizzazione, sostegno o acquiescenza di soggetti terzi. In tal senso, il trattato non disciplina genericamente il fenomeno delle persone scomparse, ma una specifica violazione dei diritti umani caratterizzata dal coinvolgimento statale, distinguendola da sequestri o sparizioni di natura esclusivamente criminale o privata. La Convenzione costituisce uno dei principali strumenti internazionali contemporanei di tutela contro la detenzione segreta, il sequestro da parte di agenti statali e le pratiche di occultamento della sorte o del luogo di detenzione di una persona.",
+      "source_url": "https://it.wikipedia.org/wiki/Convenzione_internazionale_per_la_protezione_di_tutti_gli_individui_dalle_sparizioni_forzate",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/ICAPED_members.svg/langit-1280px-ICAPED_members.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:00:55+00:00"
+    },
+    {
+      "id": "104411",
+      "category": "Scienza",
+      "title": "Repunit",
+      "hook_title": "Nella matematica ricreativa, un repunit (dall'inglese \"repeated unit\", unità ripetuta) è un numero intero che contiene solo la cifra 1, come 11 o 1111111.",
+      "micro_body": "Il termine fu coniato da Albert Beiler nel 1964 nel suo libro Recreations in the Theory of Numbers. In base 10, i repunit sono definiti come: Rn=10n−19, dove Rn è il numero in base 10 formato da n ripetizioni della cifra 1. La sequenza dei repunit è 1, 11, 111, 1111, 11111, ... (sequenza A002275 dell'OEIS).",
+      "deep_dive_expandable": "In base 10, i repunit sono definiti come:\n\nRn=10n−19,\n\ndove Rn è il numero in base 10 formato da n ripetizioni della cifra 1.\n\nLa sequenza dei repunit è 1, 11, 111, 1111, 11111, ... (sequenza A002275 dell'OEIS).",
+      "source_url": "https://it.wikipedia.org/wiki/Repunit",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:00:56+00:00"
+    },
+    {
+      "id": "3830480",
+      "category": "Scienza",
+      "title": "Rudi Mathematici",
+      "hook_title": "Rudi Mathematici è una e-zine dedicata alla divulgazione della matematica che viene pubblicata dal mese di febbraio del 1999.",
+      "micro_body": "Di periodicità mensile, attualmente dichiara di diffondere circa 3000 copie. La denominazione Rudi Mathematici è un gioco di parole che richiama l'opera Ludi mathematici di Leon Battista Alberti, e il soprannome di Rodolfo Clerico, fondatore della rivista.",
+      "deep_dive_expandable": "Accanto al titolo è presente un simbolo, con un particolare del disegno di Maurits Cornelis Escher chiamato \"Studio di divisione regolare del piano con rettili\", e con la scritta latina \"Hanc Marginis Exiguitas Non Caperet\", citazione di Pierre de Fermat e del suo celebre \"Ultimo teorema\".",
+      "source_url": "https://it.wikipedia.org/wiki/Rudi_Mathematici",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:00:57+00:00"
+    },
+    {
+      "id": "9858300",
+      "category": "Storia",
+      "title": "Global Digital Compact",
+      "hook_title": "Il Global Digital Compact (in italiano, Accordo Digitale Globale) è un'iniziativa proposta dell'agenda pubblica del Segretario Generale dell'ONU, António Guterres.",
+      "micro_body": "L'obiettivo di questo accordo è di assicurare che le tecnologie digitali siano utilizzate responsabilmente e per il beneficio di tutti, combattendo così il divario digitale e incentivando un ambiente digitale sano e inclusivo.",
+      "deep_dive_expandable": "L'obiettivo di questo accordo è di assicurare che le tecnologie digitali siano utilizzate responsabilmente e per il beneficio di tutti, combattendo così il divario digitale e incentivando un ambiente digitale sano e inclusivo.",
+      "source_url": "https://it.wikipedia.org/wiki/Global_Digital_Compact",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:00+00:00"
+    },
+    {
+      "id": "3933464",
+      "category": "Storia",
+      "title": "Patto di bilancio europeo",
+      "hook_title": "Il Patto di bilancio europeo, formalmente Trattato sulla stabilità, coordinamento e governance nell'unione economica e monetaria (conosciuto anche con l'anglicismo fiscal compact, letteralmente \"patto di bilancio\"), è un accordo approvato con un trattato internazionale il 2 marzo 2012 da 25 dei 27 stati membri dell'Unione europea; per la precisione, non è stato sottoscritto da Regno Unito, Croazia e Repubblica Ceca.",
+      "micro_body": "Entrato in vigore il 1º gennaio 2013, il patto contiene una serie di regole, chiamate \"regole d'oro\", che sono vincolanti nell'UE per il principio del pareggio di bilancio.",
+      "deep_dive_expandable": "Entrato in vigore il 1º gennaio 2013, il patto contiene una serie di regole, chiamate \"regole d'oro\", che sono vincolanti nell'UE per il principio del pareggio di bilancio.",
+      "source_url": "https://it.wikipedia.org/wiki/Patto_di_bilancio_europeo",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/European_Fiscal_Compact_ratification_%28cropped%29.svg/langit-960px-European_Fiscal_Compact_ratification_%28cropped%29.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:01+00:00"
+    },
+    {
+      "id": "7223766",
+      "category": "Storia",
+      "title": "Patto di Brunnen",
+      "hook_title": "Il Patto di Brunnen (Bund von Brunnen) fu un accordo diplomatico tra i cantoni svizzeri di Uri, Svitto e Untervaldo, firmato a Brunnen, il 9 dicembre 1315.",
+      "micro_body": "I rappresentanti dei quattro territori (Untervaldo era composta dal canton Obvaldo e dal canton Nidvaldo) si riunirono a Brunnen in seguito alla vittoria nella battaglia di Morgarten del mese precedente, per rinnovare l'accordo di mutua assistenza militare.",
+      "deep_dive_expandable": "Nel 1318, Leopoldo I duca d'Austria firmò una tregua con la Confederazione. Secondo lo storico Aegidius Tschudi, il patto di Brunnen evidenziava la volontà di rendere quella che era stata sostanzialmente una semplice alleanza una vera e propria confederazione, dando inizio all'espansione della vecchia Confederazione Svizzera, con l'adesione al patto di Lucerna nel 1332, Zurigo nel 1351, Glarona e Zugo nel 1352 e di Berna nel 1353 . Sebbene in precedenza ci furono dei simili trattati, la novità in quello di Brunnen fu il fatto di essere il primo formulato in lingua alto-tedesca media invece che in latino. Il patto di Brunnen fu a lungo considerato come l'atto di fondazione della Vecchia Confederazione fino a quando non venne sorpassato come importanza dal Patto eterno confederale del 1291.",
+      "source_url": "https://it.wikipedia.org/wiki/Patto_di_Brunnen",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:04+00:00"
+    },
+    {
+      "id": "10184909",
+      "category": "Storia",
+      "title": "Statuto di Londra",
+      "hook_title": "Lo Statuto di Londra (in tedesco Londoner Viermächte-Abkommen vom 8.",
+      "micro_body": "August 1945) stabilì la base giuridica e le regole di procedura per i tribunali militari internazionali e statunitensi istituiti per il Processo di Norimberga.",
+      "deep_dive_expandable": "Durante la Conferenza di Londra dell'8 agosto 1945 i rappresentanti degli alleati della seconda guerra mondiale firmarono il cosiddetto \"Accordo delle quattro potenze\", a cui fu allegato lo Statuto del Tribunale Militare Internazionale. Oggi è considerato il \"certificato di nascita del diritto penale internazionale\": in pratica, lo Statuto di Londra costituì la base della Legge del Consiglio di Controllo nº 10 a cui le autorità giudiziarie dei governi militari alleati si riferirono per l'accusa nei processi successivi a Norimberga.",
+      "source_url": "https://it.wikipedia.org/wiki/Statuto_di_Londra",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:09+00:00"
+    },
+    {
+      "id": "8982409",
+      "category": "Storia",
+      "title": "Trattati di novembre",
+      "hook_title": "I trattati di novembre (Novemberverträge in tedesco), vennero conclusi nel novembre del 1870 tra la Confederazione Tedesca del Nord ed i regni di Baviera e Württemberg oltre ai granducati di Baden e Assia.",
+      "micro_body": "Questi trattati consentirono l'adesione degli stati della Germania meridionale alla Federazione Tedesca del Nord, dando così il via alla costituzione dell'Impero tedesco.",
+      "deep_dive_expandable": "I trattati sancirono: Un accordo tra la Confederazione Germanica del Nord ed il Baden e l'Assia per la \"fondazione\" della \"Confederazione Germanica\" (da non confondere con quella omonima del 1815) il 15 novembre 1870. Un accordo tra la Confederazione Germanica del Nord e la Baviera il 23 novembre Un accordo tra la Confederazione Germanica del Nord ed il Württemberg il 25 novembre. Come risultato di questi trattati la Confederazione Germanica del Nord dovette mutare la propria costituzione ed il 1º gennaio 1871 venne varato un nuovo documento che venne rattificato dagli stati membri. Sulla base dei trattati di novembre, dunque, la proclamazione dell'Impero tedesco il 18 gennaio 1871 a Versailles non costituì la fondazione di un impero, quanto piuttosto la manifestazione pubblica degli avvenuti accordi.",
+      "source_url": "https://it.wikipedia.org/wiki/Trattati_di_novembre",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/NB_1866-1871.99.svg/langit-960px-NB_1866-1871.99.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:09+00:00"
+    },
+    {
+      "id": "1705652",
+      "category": "Storia",
+      "title": "Trattato bilaterale per gli investimenti",
+      "hook_title": "Un trattato bilaterale per gli investimenti (in inglese, Bilateral Investment Treaty - BIT) è un accordo che stabilisce i termini e le condizioni per gli investimenti privati da parte di cittadini e aziende di uno stato nel territorio di un altro stato ospite dell'investimento.",
+      "micro_body": "Si tratta di Investimenti Diretti Esteri (IDE), in inglese Foreign direct investment (FDI).",
+      "deep_dive_expandable": "Molti BIT garantiscono agli investitori di uno stato contraente che realizzano un investimento nel territorio dell'altro un certo numero di garanzie, che tipicamente includono un trattamento equo e imparziale, protezione dagli espropri, libero trasferimento dei mezzi di produzione e piena protezione e sicurezza. La caratteristica distintiva di molti di questi accordi è che permettono un meccanismo di risoluzione delle controversie alternativo, nel caso in cui un investitore i cui diritti garantiti dal BIT siano stati violati volesse ricorrere ad un arbitrato internazionale, spesso sotto l'egida del Centro Internazionale per la Risoluzione delle Dispute sugli Investimenti (in inglese International Center for the Resolution of Investment Disputes, ICSID, organo della banca Mondiale), invece che istituire un processo presso il tribunale dello stato ospitante. Ci sono ad oggi più di 2.000 BIT in vigore, che coinvolgono la maggior parte dei paesi del mondo. Gli stati esportatori di capitale tendono solitamente a negoziare i trattati modellandoli sul loro modello economico-legale. Il primo di questi risale al 1959 e fu concluso tra Germania a Pakistan.",
+      "source_url": "https://it.wikipedia.org/wiki/Trattato_bilaterale_per_gli_investimenti",
+      "image_url": null,
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:11+00:00"
+    },
+    {
+      "id": "8709430",
+      "category": "Storia",
+      "title": "Trattato di Nairobi",
+      "hook_title": "Il Trattato di Nairobi sulla protezione del simbolo olimpico è un trattato internazionale, adottato a Nairobi il 26 settembre 1981 e firmato dall'Italia a Ginevra il 15 giugno 1983, che fornisce una sorta di diritto d'autore nei confronti del simbolo olimpico.",
+      "micro_body": "L'articolo 1 del trattato sancisce che gli stati firmatari devono rifiutare o rendere nulli la registrazione come marchio oppure l'uso a fini commerciali del simbolo olimpico eccetto il caso in cui l'uso sia stato autorizzato dal Comitato Olimpico Internazionale (CIO).",
+      "deep_dive_expandable": "Eccezioni sono consentite ai sensi del trattato nei casi in cui il marchio sia stato registrato prima dell'entrata in vigore del trattato.",
+      "source_url": "https://it.wikipedia.org/wiki/Trattato_di_Nairobi",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/langit-500px-Olympic_rings_without_rims.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:12+00:00"
+    },
+    {
+      "id": "7907302",
+      "category": "Storia",
+      "title": "Periodo proto-elamico",
+      "hook_title": "Il Periodo proto-elamico, noto anche come Susa III, è una fase storica dell'Elam che va dal 3100/3050 al 2900 o, al più tardi, 2700 a.C. In termini archeologici, corrisponde al tardo periodo Banesh ed è riconosciuto come quello della più antica civiltà in Iran.",
+      "micro_body": "Il centro geografico della cultura proto-elamita è situato attorno al sito di Tell-i Malyan (in Iran), l'antica Anshan. La civiltà proto-elamita ha prodotto una cultura originale, che ha ripreso le avanzate delle precedenti culture dell'altopiano iranico, aggiungendovi influenze mesopotamiche.",
+      "deep_dive_expandable": "In particolare, sviluppò un sistema di scrittura che non è stata ancora decifrata, la scrittura proto-elamita in uso prima della scrittura cuneiforme elamico.",
+      "source_url": "https://it.wikipedia.org/wiki/Periodo_proto-elamico",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Susa_III_or_Proto-Elamite_cylinder_seal_3150-2800_BC_Louvre_Museum_Sb_6166.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "lang": "it",
+      "fetched_at": "2026-11-20T14:01:14+00:00"
     }
   ]
 }
